@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cpb_background_progressbar_color="#E0E0E0"
+        app:cpb_background_progressbar_width="5dp"
+        android:layout_centerInParent="true"
+        app:cpb_progress="100"
+        app:cpb_progress_max="100"
+        app:cpb_progress_direction="to_left"
+        app:cpb_progressbar_color="#3F51B5"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="true"
+        app:cpb_start_angle="0"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/step_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="35sp"
+         android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:id="@+id/step_counter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textSize="18sp"
+        android:layout_below="@id/step_counter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
